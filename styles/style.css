@@ -1,0 +1,63 @@
+body {
+    background: white;
+}
+
+/****** HOME *****/
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/bgElement.png) no-repeat;
+}
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+.header--nav li {
+    display: inline;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.header--nav li a {
+    color: #6e7679;
+}
+.header--nav li a:hover {
+    border-bottom: 2px solid #4d4d4d;
+}
+
+
+.about, .about div img {
+    height: calc(100vh - 80px);
+}
+.about_text--title {
+    margin: 0;
+    font-size: 90px;
+    color: #4d4d4d;
+}
+.about_text--subtitle {
+    color: #909090;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about_text--button button {
+    height: 50px;
+    width: 160px;
+    margin: 15px 10px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.button_left {
+    background: white;
+    border: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.button_right {
+    border: 1px solid #4d4d4d;
+}
+
+/****** KNOW MORE *****/
+
