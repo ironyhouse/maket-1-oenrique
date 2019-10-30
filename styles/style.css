@@ -1,12 +1,49 @@
 body {
     background: white;
 }
+.text--title {
+    margin: 0;
+    font-size: 90px;
+    color: #4d4d4d;
+}
+.text--subtitle {
+    color: #909090;
+    font-size: 20px;
+    font-weight: 600;
+}
+.know-more .text-title {
+    color: #4d4d4d;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 49px;
+    text-transform: uppercase;
+    letter-spacing: 5.52px;
+}
+.text-main {
+    width: 500px;
+    height: 121px;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.button  {
+    height: 50px;
+    width: 160px;
+    margin: 15px 10px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+
 
 /****** HOME *****/
 .home {
     height: 100vh;
     width: 100%;
     background: url(../img/bgElement.png) no-repeat;
+    background-size: 100%;
 }
 .header {
     height: 80px;
@@ -32,27 +69,9 @@ body {
 .about, .about div img {
     height: calc(100vh - 80px);
 }
-.about_text--title {
-    margin: 0;
-    font-size: 90px;
-    color: #4d4d4d;
-}
-.about_text--subtitle {
-    color: #909090;
-    font-size: 20px;
-    font-weight: 600;
-}
-.about_text--button button {
-    height: 50px;
-    width: 160px;
-    margin: 15px 10px 0 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-}
 .button_left {
     background: white;
-    border: white;
+    border: black;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .button_right {
@@ -60,4 +79,55 @@ body {
 }
 
 /****** KNOW MORE *****/
+.know-more {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.underline-box {
+    width: 100px;
+    border-bottom: 2px solid grey;
+}
+.know-more-container1 {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 10%;
+  
+}
+.know-more-container2 {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+/****** SERVICES *****/
+.services {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 10fr;
+    justify-content: center;
+}
+.services-container1 {
+    text-align: center;
+}
+.services-container1 p {
+    color: #4d4d4d;
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 5.52px;
+}
+.services-container2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
