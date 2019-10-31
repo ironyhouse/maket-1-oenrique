@@ -11,7 +11,7 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
-.know-more .text-title {
+.text-title {
     color: #4d4d4d;
     font-size: 46px;
     font-weight: 700;
@@ -28,12 +28,12 @@ body {
     line-height: 26px;
 }
 .button  {
-    height: 50px;
-    width: 160px;
+    font-size: 16px;
     margin: 15px 10px 0 0;
+    font-weight: 600;
+    color: #4d4d4d;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
 }
 
 
@@ -41,8 +41,8 @@ body {
 /****** HOME *****/
 .home {
     height: 100vh;
-    width: 100%;
-    background: url(../img/bgElement.png) no-repeat;
+    width: 100vw;
+    background: url(../img/bgElement.png);
     background-size: 100%;
 }
 .header {
@@ -70,11 +70,15 @@ body {
     height: calc(100vh - 80px);
 }
 .button_left {
+    height: 50px;
+    width: 160px;
     background: white;
-    border: black;
+    border: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .button_right {
+    height: 50px;
+    width: 160px;
     border: 1px solid #4d4d4d;
 }
 
@@ -88,6 +92,7 @@ body {
 }
 .underline-box {
     width: 100px;
+    margin-bottom: 10px;
     border-bottom: 2px solid grey;
 }
 .know-more-container1 {
@@ -108,6 +113,12 @@ body {
     align-items: center;
 }
 
+.button-cv {
+    height: 50px;
+    width: 240px;
+    background: white;
+    border: black 1px solid;
+}
 
 /****** SERVICES *****/
 .services {
@@ -116,9 +127,17 @@ body {
     display: grid;
     grid-template-rows: 2fr 10fr;
     justify-content: center;
+    text-align:center;
+    background-color: #f6f6f6;
 }
 .services-container1 {
-    text-align: center;
+    margin: 100px auto auto auto;
+}
+.services-container1 div{
+        margin: 0 auto;
+        width: 25%;
+        margin: 20px auto;
+        border-top:2px solid #4d4d4d;
 }
 .services-container1 p {
     color: #4d4d4d;
@@ -127,7 +146,23 @@ body {
     letter-spacing: 5.52px;
 }
 .services-container2 {
+    width: 100vw;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.services-container2--item {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.services-container2 div p {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 49px;
 }
