@@ -24,10 +24,11 @@
             </nav>
         </header>
         <div class="header about">
-            <div class="about-text">
+            <div>
                 <p class="text--title">Luis Oenrique</p>
                 <p class="text--subtitle">User Experience / User Interface Expert</p>
-                <div ><button class="button_left button active"><a href="#about">know more</a></button>
+                <div>
+                      <button class="button_left button active"><a href="#about">know more</a></button>
                       <button class="button_right button active"><a href="#hello">hire me</a></button>
                 </div>
             </div> 
@@ -100,14 +101,17 @@
             <div></div>
             <p class="text-title">TESTIMONIALS</p>
         </div>
-        <div>
-            <div class="testimonials--slider">
+        <div class="slider">
+            <div class="slider--content">
                 <div ><img src="./img/userPhoto.png" alt=""></div>
                 <div>
                     <p>limara tusi</p>
                     <p>CEO, RanDOM COMPANY</p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
                 </div>
+            </div>
+            <div class="slider--scrolling">
+                <div></div><div></div><div></div>
             </div>
         </div>
         <div class="testimonials_achievements">
@@ -141,21 +145,18 @@
                 <p class="text-title">say hello!</p>
             </div>
             <div>
-                <form action="" method="" class="form js-form-validate">
+                <form action="" method="" class="contact_form">
                         <div class="">
-                            <input type="text" name="name" placeholder="Name">
-                        </div>
-
-                        <div class="">
+                            <input type="text" name="name" placeholder="Name" >
                             <input type="email" name="mail" placeholder="Email">
                         </div>
 
                         <div class="">
-                            <textarea cols="30" rows="2">Message</textarea><br /> 
+                            <textarea cols="" rows="" placeholder="Message" maxlength="150"></textarea>
                         </div>
                     
-                        <div class="">
-                            <input type="submit" value="Send" class="active">
+                        <div>
+                            <button type="submit" class="active">Send</button>
                         </div>
                 </form>
             </div>

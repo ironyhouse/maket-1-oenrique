@@ -34,6 +34,7 @@ body {
 .text-main {
     width: 500px;
     height: 121px;
+    margin: 10px 0;
     color: #4d4d4d;
     font-size: 16px;
     font-weight: 400;
@@ -66,6 +67,7 @@ body {
 }
 .active:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: none;
 }
 
 /****** HOME *****/
@@ -132,6 +134,11 @@ body {
     align-items: flex-start;
     margin: 0 10%;
 }
+.know-more-container1 div:first-child {
+    width: 60px;
+    border-top: 4px solid #4d4d4d;
+    padding: 10px 0;
+}
 .know-more-container2 {
     height: 100vh;
     width: 50%;
@@ -148,6 +155,7 @@ body {
     width: 240px;
     background: white;
     border: black 1px solid;
+    margin: 30px 0;
 }
 
 /****** SERVICES *****/
@@ -252,31 +260,38 @@ body {
     justify-items: center;
     align-items: center;
 }
-.testimonials--slider {
-    display: flex;
-    justify-content: center;
-    padding: 20px 50px;
-    width: 70vw;
+.slider {
+    height: 30vh;
+    width: 40vw;
     border: 1px solid black;
 }
-.testimonials--slider div:nth-child(1) {
+.slider--content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+.slider--content div:nth-child(1) {
+    max-width: 100%;
+}
+.slider--content img {
+    height: auto;
     padding: 0 10px;
 }
-
-
-.testimonials--slider p:nth-child(1) {
+.slider--content p:nth-child(1) {
+    font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
 }
-.testimonials--slider p:nth-child(2) {
-    margin-top: 10px;
+.slider--content p:nth-child(2) {
+    margin-top: 5px;
     opacity: 0.9;
     font-size: 12px;
     font-style: italic;
     line-height: 16px;
     text-transform: uppercase;
 }
-.testimonials--slider p:nth-child(3) {
+.slider--content p:nth-child(3) {
     margin-top: 20px;
     opacity: 0.6;
     font-size: 16px;
@@ -284,8 +299,22 @@ body {
     line-height: 26px;
     text-transform: uppercase;
 }
+.slider--scrolling {
+    display: flex;
+    justify-content: center;
+}
+.slider--scrolling div {
+    height: 13px;
+    width: 13px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+}
+.slider--scrolling div:nth-child(2) {
+    background: black;
+}
 .testimonials_achievements {
-    height: 100%;
+    height: 80%;
     width: 100%;
     margin-bottom: 2%;
     display: grid;
@@ -306,7 +335,7 @@ body {
     text-transform: uppercase;
 }
 
-/****** TESTIMONIALS *****/
+/****** CONTACT *****/
 .contact {
     background: url(../img/banner-2.jpg) no-repeat;
     background-size: cover;
@@ -320,7 +349,15 @@ body {
     justify-items: center;
     align-items: center;
     background-color: rgba(33, 33, 33, 0.69);
-    color: white !important;
+    color: white;
+}
+/* Color */
+.color div {
+    margin-top: 25%;
+    border-top: 4px solid white;
+}
+.color p {
+    color: white;
 }
 .contact_footer {
     width: 80%;
@@ -329,15 +366,43 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+    justify-items: center;
 }
 .contact_footer li {
     display: inline;
     background: white;
 }
-.color div{
-    border-top: 4px solid white;
+.contact_form {
+    text-align: center;
 }
-.color p {
-    color: white;
+.contact_form div {
+    margin: 30px 0;
+}
+.contact_form div input {
+    margin: 0 14px;
+    height: 57px;
+    width: 360px;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+.contact_form div textarea {
+    width: 758px;
+    height: 187px;
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+.contact_form div button {
+    width: 123px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border: none; 
+}
+input::placeholder, textarea::placeholder{
+    font-weight: bold;
+}
+input:invalid {
+    background: #fdd !important; /* Красный цвет фона */
 }
