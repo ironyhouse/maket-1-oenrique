@@ -8,10 +8,10 @@
 }
 
 
-
 body {
     background: white;
 }
+/****** ARROW UP *****/
 .up_arrow {
     width: 45px;
     height: 41px;
@@ -112,7 +112,7 @@ body {
 .header--nav li a:hover {
     border-bottom: 2px solid #4d4d4d;
 }
-/* HEADER main */
+/* HEADER */
 .about {
     height: calc(100vh - 80px);
 }
@@ -243,6 +243,7 @@ body {
     justify-items: center;
     align-items: center;
     grid-gap: 50px;
+    margin-top: 20px;
 }
 .portfolio_button {
     width: 190px;
@@ -367,7 +368,7 @@ body {
     background-color: rgba(33, 33, 33, 0.69);
     color: white;
 }
-/* Color */
+/* COLOR */
 .color div {
     margin-top: 25%;
     border-top: 4px solid white;
