@@ -12,6 +12,22 @@
 body {
     background: white;
 }
+.up_arrow {
+    width: 45px;
+    height: 41px;
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+.up_arrow img {
+    height: 15px;
+    max-width: 100%;
+    margin: 14px 0;
+}
 /****** TEXT TITLE *****/
 .text--title {
     margin: 0;
@@ -264,12 +280,13 @@ body {
     height: 30vh;
     width: 40vw;
     border: 1px solid black;
+    padding: 1%;
 }
 .slider--content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 50px;
+    padding: 40px 45px 25px 45px;
 }
 .slider--content div:nth-child(1) {
     max-width: 100%;
@@ -288,7 +305,6 @@ body {
     opacity: 0.9;
     font-size: 12px;
     font-style: italic;
-    line-height: 16px;
     text-transform: uppercase;
 }
 .slider--content p:nth-child(3) {
@@ -296,7 +312,7 @@ body {
     opacity: 0.6;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 20px;
     text-transform: uppercase;
 }
 .slider--scrolling {
@@ -359,19 +375,6 @@ body {
 .color p {
     color: white;
 }
-.contact_footer {
-    width: 80%;
-    border-top: 1px solid white;
-    padding: 2% 0;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-}
-.contact_footer li {
-    display: inline;
-    background: white;
-}
 .contact_form {
     text-align: center;
 }
@@ -405,4 +408,36 @@ input::placeholder, textarea::placeholder{
 }
 input:invalid {
     background: #fdd !important; /* Красный цвет фона */
+}
+button img {
+    height: 11px;
+    width: 13px;
+    margin: 0 5px; 
+}
+.contact_footer {
+    width: 80%;
+    border-top: 1px solid white;
+    padding: 2% 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.contact_footer--icons {
+    display: flex;
+    justify-content: flex-start;
+}
+.contact_footer--icons div {
+    width: 27px;
+    height: 27px;
+    background-color: #ffffff;
+    margin-right: 9px;
+}
+.contact_footer--icons div img {
+    height: auto;
+    max-width: 100%;
+    filter: grayscale(100%); 
+}
+.contact_footer--icons div img:hover {
+    filter: grayscale(0); 
 }
