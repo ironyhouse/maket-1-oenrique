@@ -1,6 +1,18 @@
+/****** FONTS *****/
+@font-face {
+    font-family: Asap; 
+    src: url(../fonts/Asap-Regular.ttf);
+}
+*, body, div, p {
+    font-family: 'Asap', sans-serif;
+}
+
+
+
 body {
     background: white;
 }
+/****** TEXT TITLE *****/
 .text--title {
     margin: 0;
     font-size: 90px;
@@ -26,7 +38,24 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    font-family: 'Asap', sans-serif;
 }
+.container {
+    margin: 50px auto 0 auto;
+}
+.container div{
+    width: 25%;
+    margin: 20px auto;
+    border-top: 4px solid #4d4d4d;
+}
+.container p {
+    color: #4d4d4d;
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 5.52px;
+}
+
+/****** BUTTON *****/
 .button  {
     font-size: 16px;
     margin: 15px 10px 0 0;
@@ -35,14 +64,15 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-
-
+.active:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
 /****** HOME *****/
 .home {
     height: 100vh;
-    width: 100vw;
-    background: url(../img/bgElement.png);
+    width: 100%;
+    background: url(../img/bg_element_.png);
     background-size: 100%;
 }
 .header {
@@ -64,17 +94,20 @@ body {
 .header--nav li a:hover {
     border-bottom: 2px solid #4d4d4d;
 }
-
-
-.about, .about div img {
+/* HEADER main */
+.about {
     height: calc(100vh - 80px);
+}
+.about div img {
+    max-width: 100%;
+    height: auto;
 }
 .button_left {
     height: 50px;
     width: 160px;
     background: white;
     border: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
 }
 .button_right {
     height: 50px;
@@ -90,11 +123,6 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.underline-box {
-    width: 100px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid grey;
-}
 .know-more-container1 {
     height: 100vh;
     width: 50%;
@@ -103,7 +131,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: 0 10%;
-  
 }
 .know-more-container2 {
     height: 100vh;
@@ -112,7 +139,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.know-more-container2 img {
+    max-width: 100%;
+    height: auto;
+}
 .button-cv {
     height: 50px;
     width: 240px;
@@ -125,25 +155,10 @@ body {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 2fr 10fr;
+    grid-template-rows: 1fr 11fr;
     justify-content: center;
     text-align:center;
     background-color: #f6f6f6;
-}
-.services-container1 {
-    margin: 100px auto auto auto;
-}
-.services-container1 div{
-        margin: 0 auto;
-        width: 25%;
-        margin: 20px auto;
-        border-top:2px solid #4d4d4d;
-}
-.services-container1 p {
-    color: #4d4d4d;
-    font-size: 46px;
-    text-transform: uppercase;
-    letter-spacing: 5.52px;
 }
 .services-container2 {
     width: 100vw;
@@ -165,4 +180,164 @@ body {
     font-size: 24px;
     font-weight: 500;
     line-height: 49px;
+}
+
+/****** MY SKILLS*****/
+.my_skills {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 11fr;
+    justify-items: center;
+    align-items: center;
+}
+.my_skills--main {
+    margin: 5%;
+}
+.my_skills--main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/****** PORTFOLIO *****/
+.portfolio {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 2fr;
+    justify-items: center;
+    align-items: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.portfolio_containers {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 50px;
+}
+.portfolio_button {
+    width: 190px;
+    height: 50px;
+    box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px none black;
+    /* Style for "LOAD MORE" */
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+.portfolio_containers img {
+    max-width: 85%;
+    height: auto;
+}
+.portfolio_button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/****** TESTIMONIALS *****/
+.testimonials {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 4fr;
+    justify-items: center;
+    align-items: center;
+}
+.testimonials--slider {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    width: 70vw;
+    border: 1px solid black;
+}
+.testimonials--slider div:nth-child(1) {
+    padding: 0 10px;
+}
+
+
+.testimonials--slider p:nth-child(1) {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.testimonials--slider p:nth-child(2) {
+    margin-top: 10px;
+    opacity: 0.9;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.testimonials--slider p:nth-child(3) {
+    margin-top: 20px;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.testimonials_achievements {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #f6f6f6;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.testimonials_achievements div p:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.testimonials_achievements div p:nth-child(3) {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/****** TESTIMONIALS *****/
+.contact {
+    background: url(../img/banner-2.jpg) no-repeat;
+    background-size: cover;
+}
+.contact_block {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(33, 33, 33, 0.69);
+    color: white !important;
+}
+.contact_footer {
+    width: 80%;
+    border-top: 1px solid white;
+    padding: 2% 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.contact_footer li {
+    display: inline;
+    background: white;
+}
+.color div{
+    border-top: 4px solid white;
+}
+.color p {
+    color: white;
 }
