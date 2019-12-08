@@ -22,6 +22,7 @@
 
 
 
+
 body {
     background: white;
     overflow-x: hidden;
@@ -43,11 +44,10 @@ body {
     max-width: 100%;
     margin: 14px 0;
 }
-/****** TEXT TITLE *****/
-.text-title {
+/****** TITLE *****/
+.text_title {
     color: #4d4d4d;
-    font-size: 46px;
-    line-height: 49px;
+    font-size: 46px;     
     text-transform: uppercase;
     letter-spacing: 5.52px;
     font-weight: bold;
@@ -71,12 +71,6 @@ body {
     margin: 20px auto;
     border-top: 4px solid #4d4d4d;
 }
-.container p {
-    color: #4d4d4d;
-    font-size: 46px;
-    text-transform: uppercase;
-    letter-spacing: 5.52px;
-}
 /****** BUTTON *****/
 .button  {
     font-size: 16px;
@@ -94,18 +88,8 @@ body {
 
 
 
+
 /****** HOME *****/
-.text--title {
-    font-size: 90px;
-    color: #4d4d4d;
-    margin-left: -8px;
-}
-.text--subtitle {
-    margin: 10px 0;
-    color: #909090;
-    font-size: 20px;
-    font-weight: 600;
-}
 .home {
     height: 100vh;
     width: 100%;
@@ -119,6 +103,11 @@ body {
     align-items: center;
     margin: 0 10%;
 }
+.header--logo img {
+    height: 70px;
+    max-width: 100%;
+    padding: 5px 0;
+}
 .header--nav li {
     display: inline;
     font-size: 16px;
@@ -131,7 +120,18 @@ body {
 .header--nav li a:hover {
     border-bottom: 2px solid #4d4d4d;
 }
-/* HEADER */
+/* HEADER MAIN */
+.name_title {
+    font-size: 90px;
+    color: #4d4d4d;
+    margin-left: -8px;
+}
+.name_subtitle {
+    margin: 10px 0;
+    color: #909090;
+    font-size: 20px;
+    font-weight: 600;
+}
 .about {
     height: calc(100vh - 80px);
     display: flex;
@@ -155,6 +155,8 @@ body {
     width: 160px;
     border: 1px solid #4d4d4d;
 }
+
+
 
 /****** KNOW MORE *****/
 .know_more {
@@ -197,6 +199,8 @@ body {
     margin: 30px 0;
 }
 
+
+
 /****** SERVICES *****/
 .services {
     height: 100vh;
@@ -232,6 +236,8 @@ body {
     height: auto;
 }
 
+
+
 /****** MY SKILLS*****/
 .my_skills {
     height: 100vh;
@@ -250,13 +256,15 @@ body {
     height: auto;
 }
 
+
+
 /****** PORTFOLIO *****/
 .portfolio {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 10fr;
+    grid-template-rows: 2fr 8fr 2fr;
     justify-items: center;
     align-items: center;
     background-color: #f6f6f6;
@@ -274,7 +282,7 @@ body {
     max-width: 100%;
     height: auto;
 }
-/* .portfolio_button {
+.portfolio_button {
     width: 190px;
     height: 50px;
     box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
@@ -290,7 +298,8 @@ body {
 .portfolio_button:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 } 
-*/
+
+
 
 /****** TESTIMONIALS *****/
 .testimonials {
@@ -304,10 +313,10 @@ body {
 }
 .slider {
     height: 40vh;
-    width: 80vw;
+    width: 50vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 20% 60% 20%;
     justify-items: center;
     align-items: center;
     border: 1px solid black;
@@ -315,10 +324,9 @@ body {
 }
 .slider--content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 8fr;
     grid-template-rows: 1fr;
     justify-items: center;
-    align-items: center;
     margin: 10px;
 }
 .slider--content img {
@@ -353,6 +361,7 @@ body {
 .slider--scrolling {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .slider--scrolling div {
     height: 13px;
@@ -384,17 +393,20 @@ body {
     font-size: 22px;
     text-transform: uppercase;
 }
+
+
+
 /****** CONTACT *****/
 .contact {
     background: url(../img/banner-2.jpg) no-repeat;
     background-size: cover;
 }
 .contact_block {
+    max-width: 100vw;
     height: 100vh;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
     justify-items: center;
     align-items: center;
     background-color: rgba(33, 33, 33, 0.69);
@@ -416,14 +428,14 @@ body {
 }
 .contact_form div input {
     margin: 5px 2vw;
-    height: 57px;
+    height: 6vh;
     width: 40vw;
-    background-color: #ffffff;
     padding-left: 10px;
+    background-color: #ffffff;
 }
 .contact_form div textarea {
     width: 85vw;
-    height: 187px;
+    height: 20vh;
     background-color: #ffffff;
     padding: 20px 10px;
 }
@@ -472,20 +484,47 @@ button img {
 
 
 
- 
+
+
 /****** CONTACT *****/
 @media (max-width: 640px) {
+    .text_title {
+        font-size: 23px;
+    }
     .header {
+        display: block;
+        text-align: center;
+    }        
+    .header--logo img{
+        height: 25vh;
+        margin-top: 90px;
+    }
+    .header--nav {
         display: none;
     }
-    .header--nav li {
-        display: block;
-        margin: 10px;
+    .name_title {
+        font-size: 56px;
+    }
+    .about {
         text-align: center;
     }
-    .text--title {
-        font-size: 60px;
+    .about div img {
+        display: none;
     }
+    .know_more {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .know_more--container1 {
+        width: 90vw;
+    }
+    .know_more--container2 {
+        /* height: auto; */
+        width: 100vw;
+    }
+    .services--container2--item {
+        font-size: 13px;
+    } 
     .portfolio_containers {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
@@ -493,8 +532,4 @@ button img {
     .testimonials {
         display: none;
     }
-    /* .text-title {
-        font-size: 32px;
-        font-weight: 400px;
-    } */
 } 
