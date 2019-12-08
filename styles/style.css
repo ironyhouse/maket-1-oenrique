@@ -497,7 +497,7 @@ button img {
     }        
     .header--logo img{
         height: 25vh;
-        margin-top: 90px;
+        margin-top: 30px;
     }
     .header--nav {
         display: none;
@@ -533,5 +533,3 @@ button img {
         display: none;
     }
 } 
-
-
