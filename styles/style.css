@@ -747,7 +747,7 @@ button img {
         font-size: 23px;
     }
     .header {
-        height: 40vh;
+        height: 30vh;
         display: flex;
         align-items: flex-end;
         text-align: center;
