@@ -50,7 +50,7 @@ body {
 /****** TITLE *****/
 .text_title {
     color: #4d4d4d;
-    font-size: 46px;     
+    font-size: 5vh;     
     text-transform: uppercase;
     letter-spacing: 5.52px;
     font-weight: bold;
@@ -123,7 +123,7 @@ body {
 }
 .header--nav li {
     display: inline;
-    font-size: 16px;
+    font-size: 2vh;
     text-transform: uppercase;
     margin-left: 40px;
 }
@@ -135,9 +135,8 @@ body {
 }
 /* HEADER MAIN */
 .name_title {
-    font-size: 90px;
+    font-size: 10vh;
     color: #4d4d4d;
-    margin-left: -8px;
 }
 .name_subtitle {
     margin: 10px 0;
@@ -159,7 +158,7 @@ body {
     margin: 0 10%;
 }
 .about div img {
-    max-width: 100%;
+    max-width: 30vw;
     height: auto;
 }
 .button_left {
@@ -305,7 +304,7 @@ body {
             align-items: flex-start;
     /* text */
     color: #4d4d4d;
-    font-size: 24px;
+    font-size: 3vh;
     font-weight: 700;
     line-height: 49px;
 }
@@ -318,7 +317,7 @@ body {
     -ms-grid-column: 1;
 }
 .services--container2--item img {
-    max-width: 100%;
+    max-width: 10vh;
     height: auto;
 }
 
@@ -351,7 +350,7 @@ body {
     margin: 5%;
 }
 .my_skills--main img {
-    max-width: 100%;
+    max-width: 70vw;
     height: auto;
 }
 
@@ -608,12 +607,12 @@ body {
     -ms-grid-column: 4;
 }
 .testimonials_achievements div p:nth-child(2) {
-    font-size: 30px;
+    font-size: 3vh;
     font-weight: bold;
     margin: 15px 0;
 }
 .testimonials_achievements div p:nth-child(3) {
-    font-size: 22px;
+    font-size: 2.5vh;
     text-transform: uppercase;
 }
 
@@ -625,33 +624,20 @@ body {
     background-size: cover;
 }
 .contact_block {
-    max-width: 100vw;
-    height: 100vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    max-width: 100%;
+    height: 100%;
+
+    display: flex;
+ 
+
+    align-items: center;
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+
     background-color: rgba(33, 33, 33, 0.69);
     color: white;
 }
-.contact_block > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-}
-.contact_block > *:nth-child(2) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-}
-.contact_block > *:nth-child(3) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-}
+
 /* COLOR */
 .color div {
     margin-top: 25%;
@@ -745,17 +731,30 @@ button img {
 
 
 /****** CONTACT *****/
-@media (max-width: 640px) {
+@media (orientation: landscape) and (max-width: 850px) {
+    .testimonials {
+        display: none;
+    }
+}
+@media (orientation: portrait) and (max-width: 850px) {
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     .text_title {
         font-size: 23px;
     }
     .header {
-        display: block;
+        height: 50vh;
+        display: flex;
+        align-items: flex-end;
         text-align: center;
     }        
     .header--logo img{
         height: 25vh;
-        margin-top: 10px;
+        margin: 3vh 0;
     }
     .header--nav {
         display: none;
@@ -765,9 +764,15 @@ button img {
         color: black;
     }
     .about {
+        height: 50vh;
+        align-items: flex-start;
+        justify-content: center;
         text-align: center;
     }
-    .about div img {
+    .name_subtitle {
+        font-size: 2.5vh;
+    }
+    .about div:nth-child(2) {
         display: none;
     }
     .about_me {
@@ -797,6 +802,9 @@ button img {
     .about_me--container2 {
         /* height: auto; */
         width: 100vw;
+    }
+    .my_skills {
+        height: 50vh;
     }
     .services--container2--item {
         font-size: 13px;
