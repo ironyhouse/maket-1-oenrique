@@ -70,7 +70,7 @@ body {
        text-overflow: ellipsis;
 }
 .container {
-    margin: 50px auto 0 auto;
+    margin: 5vh auto 0 auto;
 }
 .container div {
     width: 25%;
@@ -747,7 +747,7 @@ button img {
         font-size: 23px;
     }
     .header {
-        height: 50vh;
+        height: 40vh;
         display: flex;
         align-items: flex-end;
         text-align: center;
